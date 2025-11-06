@@ -10,8 +10,6 @@ def divide_matrix(matrix, k):
     
     if diagonal_element == 0:
         return None
-    
-    # Делим элементы k-й строки
     for j in range(n):
         new_matrix[k][j] /= diagonal_element
     
