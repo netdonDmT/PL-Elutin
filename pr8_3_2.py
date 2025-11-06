@@ -1,4 +1,4 @@
-def rearrange_matrix(matrix):
+def max_elem_matrix(matrix):
     
     n = len(matrix)     
     m = len(matrix[0])  
@@ -32,7 +32,6 @@ matrix = [
     [7.8, 8.4, 9.0]
 ]
 
-result = rearrange_matrix(matrix)
-print(result)
+result = max_elem_matrix(matrix)
 for i in result:
     print(i)
