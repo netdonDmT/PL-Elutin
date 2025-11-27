@@ -24,12 +24,13 @@ window = tk.Tk()
 window.title("Парсер GitHub репозиториев")
 window.geometry("600x400")
 
-label = tk.Label(window, text="Введите название репозитория (формат: владелец/репозиторий):")
+label = tk.Label(window, text="Введите название репозитория (владелец/репозиторий):")
 label.pack(pady=10)
 
 entry = tk.Entry(window, width=50)
 entry.pack(pady=5)
 entry.insert(0, "CocoaPods/Specs")
+entry.config(fg="blue")
 
 button = tk.Button(window, text="Получить данные", command=parse_repository)
 button.pack(pady=10)
